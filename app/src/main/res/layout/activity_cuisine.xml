@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".CuisineActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:background="@android:color/holo_green_light"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Choose Cuisine"
+        android:textSize="24sp"
+        android:textStyle="bold"></TextView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <LinearLayout android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnChinese"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/roundedcorner"
+                android:onClick="btnChinese_Click"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chinese"></ImageButton>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chinese"></TextView>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btnIndian"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:onClick="btnIndian_Click"
+                android:scaleType="centerCrop"
+                android:src="@drawable/indian"></ImageButton>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Indian"></TextView>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btnItalian"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:layout_weight="0.5"
+                android:onClick="btnItalian_Click"
+                android:scaleType="centerCrop"
+                android:src="@drawable/italian"></ImageButton>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Italian"></TextView>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btnMiddleEast"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:layout_weight="0.5"
+                android:onClick="btnMiddleEast_Click"
+                android:scaleType="centerCrop"
+                android:src="@drawable/middle_east"></ImageButton>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Middle East"></TextView>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btnMexican"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:onClick="btnMexican_Click"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mexican"></ImageButton>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mexican"></TextView>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="wrap_content"
+          android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/btnThai"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:onClick="btnThai_Click"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/thai"></ImageButton>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Thai"></TextView>
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

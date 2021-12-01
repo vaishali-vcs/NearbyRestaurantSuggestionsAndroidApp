@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Restaurant Locator</string>
+    <string name="title_activity_maps">Locator</string>
+    <string name="txtStart">start</string>
+    <string name="restaurant_locator">Restaurant Locator</string>
+    <string name="restaurantslocations">Restaurant Location</string>
+    <string name="RestaurantsTitle">Restaurants</string>
+
+</resources>
